@@ -4,10 +4,10 @@ on:
     branches:
       - main
       - dev
+environment: testing # This is the name of the environment on GitHub
 env:
   MONGODB_DB_NAME: kube
 jobs:
-  environment: testing # This is the name of the environment on GitHub
   test:
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.deys8ga.mongodb.net
